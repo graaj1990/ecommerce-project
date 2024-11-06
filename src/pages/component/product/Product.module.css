@@ -1,0 +1,130 @@
+.productContainer {
+  background-color: #f4f5f7;
+  margin-bottom: 30px;
+  position: relative; /* Added for overlay positioning */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  width: 100%;
+  position: relative;
+  min-height: 300px;
+}
+
+.imagePopContainer {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount,
+.new {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.discount {
+  position: absolute;
+  top: 7px;
+  right: 1px;
+}
+
+.new {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+}
+
+.productDetails {
+  min-height: 145px;
+  padding: 16px;
+  padding-bottom: 30px;
+}
+
+.productName {
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.productInfo {
+  color: #898989;
+  font-size: 16px;
+}
+
+.productPrice {
+  color: #3a3a3a;
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+}
+
+.originalPrice {
+  color: #b0b0b0;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: line-through;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background on hover */
+  opacity: 0;
+  display: flex;
+flex-direction: column; /* Added for vertical stacking */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 8px; /* Ensure overlay matches the container's corners */
+}
+
+.productContainer:hover .overlay {
+  opacity: 1; /* Show overlay when hovered */
+}
+
+.addToCart {
+  color: #B88E2F;
+  border:none;
+  border: 1px solid #B88E2F;
+  width: 245px;
+  height: 48px;
+  background-color: #fff;
+}
+.share,.compare,.like {
+  color: white;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  background-color: transparent;
+  font-weight: bold;
+}
+.space {
+padding-right: 5px;}
+
+.addToCart:hover,
+.share:hover {
+  opacity: 1;
+  transform: scale(1.05); /* Slight zoom effect on buttons */
+}
+
+.addToCart:focus,
+.share:focus {
+  outline: none;
+}

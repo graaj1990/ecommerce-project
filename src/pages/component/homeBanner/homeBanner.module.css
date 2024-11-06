@@ -1,0 +1,50 @@
+.banner{
+    background-color: #979797;
+    height: 716px;
+    position: relative;
+    background-image: url('/images/banner.png');
+    background-size: cover; /* Makes sure the image covers the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+}
+.newArrivals{
+    position: absolute;
+    width: 643px;
+    height: 443px;
+    background-color: #FFF3E3;
+    right: 53px;
+    top:100px;
+    padding: 62px 43px 37px 39px;
+}
+.newArrivalsDes {
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.descoverCollection {
+    display: block;
+    color:#B88E2F;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 65px;
+}
+.detail {
+    font-size: 18px;
+    color:#333;
+}
+.buyNow {
+    background-color: #B88E2F;
+    width: 222px;
+    height: 74px;
+    padding: 25px 72px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    border:none;
+    outline: none;
+}
+.buyNow:hover{
+    border:none;
+}
+.buyNow:focus {
+    outline: none;
+}
