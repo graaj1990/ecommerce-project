@@ -1,0 +1,83 @@
+.contactContainer {
+    padding: 0 192px;
+}
+.header {
+    padding-top:98px;
+    text-align: center;
+    max-width: 644px;
+    margin: 0 auto;
+    padding-bottom:82px;
+}
+.header h1{
+    font-size: 36px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width:212px;
+}
+.text h3{
+    font-size: 24px;
+}
+.addressContainer {
+    margin-bottom: 42px;
+    display: flex;
+}
+
+.midContainer {
+    display: flex;
+    max-width: 1440px;
+    padding-bottom: 63px;
+}
+
+.img{
+    margin-right: 10px;
+}
+.leftSection {
+    width: 393px;
+    padding-left:191px;
+}
+
+.rightSection{
+}
+
+.formContainer {
+    max-width: 635px;
+    padding:0 52px;
+}
+
+.formLable {
+    font-weight: 500;
+}
+
+.formInput {
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    width:528px;
+    height: 75px;
+    padding: 20px;
+    border:1px solid #9F9F9F;
+}
+.formtextArea {
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    width:528px;
+    min-height: 120px;
+    padding: 20px;
+    border:1px solid #9F9F9F;
+}
+
+.formButton {
+    width: 237px;
+    height: 55px;
+    background-color: #B88E2F;
+    color:#fff;
+    border: 1px solid #B88E2F;
+}
+.formButton:focus {
+    outline: none;
+}

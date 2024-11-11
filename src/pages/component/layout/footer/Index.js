@@ -1,9 +1,21 @@
 import Link from 'next/link';
 import Image from "next/image";
 import styles from "./Footer.module.css";
+import { useRouter } from 'next/router';
+import { TopFooter } from './TopFooter';
 
 export default function Footer() {
-    return <footer className={styles.footer}>
+    const router = useRouter();
+    // Get the current pathname
+    const currentPage = router.pathname;
+    const routes = ['/contact', '/about'];
+    const showTopFooter = routes.includes(currentPage);
+    console.log('currentPage', currentPage)
+
+
+    return <>
+    {showTopFooter &&  <TopFooter/>}
+    <footer className={styles.footer}>
             <div className='row'>
                 <div className='col-sm-3'>
                     <Link href="/" className={styles.logo}>
@@ -63,5 +75,6 @@ export default function Footer() {
         <p className={styles.reserve}>
             2023 furino. All rights reverved
         </p>
-            </footer>
+        </footer>
+        </>
 }

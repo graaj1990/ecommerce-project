@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
-
+import Banner from "./component/banner";
+import { ContactPage } from "./component/contact/Index";
 
 
 export default function Contact() {
@@ -12,6 +12,8 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    </>
+      <ContactPage />
+
+      </>
   );
 }
